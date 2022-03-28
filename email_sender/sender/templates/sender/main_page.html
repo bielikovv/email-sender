@@ -6,5 +6,11 @@
 </head>
 <body>
 
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-dark">Dark</button>
+</form>
+
 </body>
 </html>
