@@ -10,3 +10,4 @@ class SendMailForm(forms.ModelForm):
     class Meta:
         model = SendMail
         fields = ['name', 'subject', 'content']
+

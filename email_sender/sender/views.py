@@ -8,7 +8,7 @@ def mail(request):
     if request.method == 'POST':
         form = SendMailForm(request.POST)
         if form.is_valid():
-            send_mail(form.cleaned_data['subject'], form.cleaned_data['content'], 'fakelazzex@gmail.com', ['ivanbelikov890@gmail.com'], )
+            send_mail(form.cleaned_data['subject'], form.cleaned_data['content'], 'fakelazzex@gmail.com', [form.cleaned_data['name']], )
             return redirect('main_page')
     else:
         form = SendMailForm()
