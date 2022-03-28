@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class SendMail(models.Model):
+    theme = models.CharField(max_length=200, verbose_name='theme')
+    content = models.TextField(verbose_name='content')
