@@ -124,8 +124,8 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'fakelazzex@gmail.com'
-EMAIL_HOST_PASSWORD = 'vitrum15'
+EMAIL_HOST_USER = 'YOUR MAIL(SENDER)'
+EMAIL_HOST_PASSWORD = 'YOUR MAIL PASSWORD(SENDER)'
 
 EMAIL_PORT = 465
 EMAIL_USE_TLS = False
